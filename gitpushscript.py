@@ -1,7 +1,8 @@
 import subprocess
 
 commitmessage = input("Enter commit message : ")
-branchname = subprocess.run(['git', 'branch', '--show-current'])
+branchname = subprocess.run(['git', 'branch', '--show-current'], stdout=subprocess.PIPE)
+branchname = branchname.stdout.decode().strip()
 print(branchname)
 
 addcmd = ['git', 'add', '.']
