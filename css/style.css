@@ -59,7 +59,7 @@ header{
 
 .imageicon img:hover{
     transform: scale(1.1);
-    transition: 0.2s ease all;
+    transition: transform 0.2s ease all;
     filter: drop-shadow(1px 1px 1px black);
 }
 
@@ -97,12 +97,6 @@ header{
     width: 25%;
     height: 25%;
     filter: drop-shadow(1px 1px 1px black);
-}
-
-.welcome-image:hover{
-    transform: scale(1.2);
-    transition: 0.5s ease all;
-    filter: drop-shadow(2px 2px 2px black);
 }
 
 /* Buttons */
